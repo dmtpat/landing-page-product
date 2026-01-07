@@ -3,9 +3,9 @@ import './Header.module.css'
 function Header() {
     return (
         <header>
-            <h1>bla bla bla</h1>
+            <h1>Queasto è l'Header</h1>
         </header>
 
-    )
+    );
 }
 export default Header
