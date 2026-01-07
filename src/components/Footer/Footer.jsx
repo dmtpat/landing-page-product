@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <div>
+        <div className="bg-success">
             <h1>
                 Questo è il Footer
             </h1>
