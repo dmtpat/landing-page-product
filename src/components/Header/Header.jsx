@@ -5,7 +5,7 @@ import logo from '../../assets/logo.png'
 function Header() {
     return (
         <header >
-            <nav className="navbar navbar-expand-lg ">
+            <nav className="navbar navbar-expand-lg fixed-top  bg-white mb-5 ">
                 <div className="container-fluid  ">
                     <a className="navbar-brand" href="#">
                         <img src={logo} alt="Rubber Duck" />
@@ -17,22 +17,22 @@ function Header() {
                         <div className="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link active text-primary" aria-current="page" href="#">Home</a>
+                                    <a className="nav-link active text-primary" aria-current="page" href="#home">Home</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">I punti di forza</a>
+                                    <a className="nav-link" href="#punti_di_forza">I punti di forza</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Recensioni</a>
+                                    <a className="nav-link" href="#recensioni">Recensioni</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Paperelle</a>
+                                    <a className="nav-link" href="#paperelle">Paperelle</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">FAQs</a>
+                                    <a className="nav-link" href="#faqs">FAQs</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Newsletter</a>
+                                    <a className="nav-link" href="#newsletter">Newsletter</a>
                                 </li>
                             </ul>
                         </div>

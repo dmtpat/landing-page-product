@@ -3,8 +3,8 @@ import style from './jumbotron.module.css'
 import banner_image from "../../assets/banner-image.png";
 function Jumbotron() {
     return (
-        <div className="container-fluid ">
-            <div className="row row-col-2 row-col-sm-1 p-0 m-0">
+        <div id="home" className="container-fluid mt-5">
+            <div className="row row-col-2 row-col-sm-1 p-0 mt-5">
                 <div className="col ">
                     <img src={banner_image} alt="" />
                 </div>
