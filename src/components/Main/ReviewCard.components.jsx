@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -7,15 +8,15 @@ import 'font-awesome/css/font-awesome.min.css';
 function ReviewCard(props) {
     const review = props.review;
     return (
-        <div id={review.id} className=" col col-4" >
-            <p className="text-muted">{review.text}</p>
-            {/* <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
-                <li><i className="fa-solid fa-star" style="color: #FFD43B;"></i></li>
-                <li><i className="fa-solid fa-star" style="color: #FFD43B;"></i></li>
-                <li><i className="fa-solid fa-star" style="color: #FFD43B;"></i></li>
-                <li><i className="fa-solid fa-star" style="color: #FFD43B;"></i></li>
-                <li><i className="fa-solid fa-star" style="color: #FFD43B;"></i></li>
-            </ul> */}
+        <div id={review.id} className=" col col-4 pt-4 pb-4 px-5" >
+            <p className="py-4">"{review.text}"</p>
+            <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li><FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B", }} /></li>
+                <li><FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B", }} /></li>
+                <li><FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B", }} /></li>
+                <li><FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B", }} /></li>
+                <li><FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B", }} /></li>
+            </ul>
             <h5 className="mb-3">{review.author} - {review.date}</h5>
         </div>
     )

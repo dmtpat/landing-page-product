@@ -11,9 +11,14 @@ function Reviews() {
                     <div className="col col-12">
                         <div className="container">
                             <div className="row">
-                                {Recensioni.map((review) => (
-                                    <ReviewCard review={review} />
-                                ))}
+                                <div className='carousel slide text-center'>
+                                    <div class="d-flex justify-content-center mb-4">
+                                        {Recensioni.map((review) => (
+                                            <div class="carousel-item">
+                                                <ReviewCard review={review} />
+                                            </div>
+                                        ))}
+                                    </div></div>
                             </div>
                         </div>
                     </div>
