@@ -4,6 +4,7 @@ import Jumbotron from "./Jumbotron.components";
 import Points from "./Points.components";
 import ReviewsSection from "./Reviews.components";
 import ShopSection from './ShopSection.components';
+import Faqs from "./Faqs.components.jsx"
 
 function Main() {
     return (
@@ -12,6 +13,7 @@ function Main() {
             <Points />
             <ReviewsSection />
             <ShopSection />
+            <Faqs />
         </main>
     )
 }

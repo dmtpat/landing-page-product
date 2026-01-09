@@ -20,3 +20,4 @@ const faqs = [
         text: "Dovresti spiegare ogni dettaglio del tuo codice. Più sei dettagliato, più è probabile che tu scopra errori o ottenga nuove prospettive. Questo processo ti costringe a rivedere attentamente ogni parte del tuo lavoro."
     },
 ]
+export default faqs
