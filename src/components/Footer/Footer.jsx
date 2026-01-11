@@ -1,10 +1,13 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Subscribe from "./Subscribe.component"
+import Foot from "./Foot.component"
+
 function Footer() {
     return (
-        <div className="bg-success">
-            <h1>
-                Questo è il Footer
-            </h1>
-        </div>
+        <>
+            <Subscribe />
+            <Foot />
+        </>
     )
 }
 export default Footer

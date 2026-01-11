@@ -57,7 +57,7 @@ function Faqs() {
                 <div className="col-3">
                     <div className="card border-0 p-4 text-center">
                         <div className="card-body">
-                            <FontAwesomeIcon icon={faMapPin} style={{ color: "#2E45CC", }} />
+                            <FontAwesomeIcon icon={faMapPin} size="2xl" style={{ color: "#2E45CC", }} />
                             <h5 className="card-title fs-3"><strong>100% Prodotto di Qualità</strong></h5>
                             <p className="card-text">Abbiamo anche la possibilità di ritiro direttamente dallo stagno</p>
                         </div>
@@ -73,7 +73,7 @@ function Faqs() {
                 <div className="col-3">
                     <div className="card border-0 p-4  text-center">
                         <div className="card-body">
-                            <FontAwesomeIcon icon={faBagShopping} style={{ color: "#2E45CC", }} />
+                            <FontAwesomeIcon icon={faBagShopping} size="2xl" style={{ color: "#2E45CC", }} />
                             <h5 className="card-title fs-3"><strong>Spedizione Gratuita</strong></h5>
                             <p className="card-text">Dal magazzino alla scrivania</p>
                         </div>
@@ -89,7 +89,7 @@ function Faqs() {
                 <div className="col-3">
                     <div className="card border-0 p-4  text-center">
                         <div className="card-body">
-                            <FontAwesomeIcon icon={faBandage} style={{ color: "#2E45CC", }} />
+                            <FontAwesomeIcon icon={faBandage} size="2xl" style={{ color: "#2E45CC", }} />
                             <h5 className="card-title fs-3"><strong>Rimborso garantito</strong></h5>
                             <p className="card-text">Ti rimborsiamo se la paperella fa quack</p>
                         </div>
