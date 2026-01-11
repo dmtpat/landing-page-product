@@ -1,4 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery/dist/jquery.min.js'
+import 'bootstrap/dist/js/bootstrap.min.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapPin } from '@fortawesome/free-solid-svg-icons'
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
@@ -20,8 +22,23 @@ function Faqs() {
 
 
                     <div class="accordion" id="accordionExample">
-
-                        <div className="accordion-item border-0">
+                        {
+                            Questions.map((question) => (
+                                <div className="accordion-item border-0" key={question.id}>
+                                    <h2 className="accordion-header">
+                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={"#" + question.id} aria-expanded="true" aria-controls={question.id}>
+                                            {question.title}
+                                        </button>
+                                    </h2>
+                                    <div id={question.id} className="accordion-collapse  collapse" data-bs-parent="#accordionExample">
+                                        <div className="accordion-body">
+                                            {question.text}
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                        {/* <div className="accordion-item border-0">
                             <h2 className="accordion-header">
                                 <button className="accordion-button" type="button" data-bs-toggle="collapse show" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     {Questions[0].title}
@@ -35,11 +52,11 @@ function Faqs() {
                         </div>
                         <div className="accordion-item border-0">
                             <h2 className="accordion-header">
-                                <button className="accordion-button" type="button" data-bs-toggle="collapse show" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapseOne">
                                     {Questions[1].title}
                                 </button>
                             </h2>
-                            <div id="collapseOne" className="accordion-collapse  show" data-bs-parent="#accordionExample">
+                            <div id="collapsetwo" className="accordion-collapse  collapse" data-bs-parent="#accordionExample">
                                 <div className="accordion-body">
                                     {Questions[1].text}
                                 </div>
@@ -67,8 +84,8 @@ function Faqs() {
                                 <div className="accordion-body">
                                     {Questions[3].text}
                                 </div>
-                            </div>
-                        </div>
+                            </div> */}
+                        {/* </div> */}
 
 
                     </div>
@@ -120,7 +137,7 @@ function Faqs() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 export default Faqs

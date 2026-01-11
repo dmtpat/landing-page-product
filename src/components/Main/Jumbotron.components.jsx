@@ -4,8 +4,8 @@ import banner_image from "../../assets/banner-image.png";
 function Jumbotron() {
     return (
         <div id="home" className="container-fluid mt-5">
-            <div className="row row-col-2 row-col-sm-1 p-0">
-                <div className="col col-6">
+            <div className="row row-col-2 row-col-sm-1 justify-content-between ">
+                <div className="col col-6 p-0 ">
                     <img src={banner_image} alt="" />
                 </div>
                 <div className={`col ${style.ms_banner_bg}`} >
