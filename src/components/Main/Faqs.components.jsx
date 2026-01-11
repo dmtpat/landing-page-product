@@ -9,9 +9,9 @@ import single_image from "../../assets/single-image2.png"
 
 function Faqs() {
     return (
-        <div id='faqs' className="container">
-            <div className="row gy-4 text-center">
-                <div className="col-12"><h2>FAQs</h2></div>
+        <div id='faqs' className="container my.5 py-5">
+            <div className="row gy-4 text-center mt-5">
+                <div className="col-12"><h2 className='display-2 fw-semibold'>FAQs</h2></div>
 
                 <div className="col-6">
                     <img className='img-fluid' src={single_image} alt="" />
@@ -33,19 +33,43 @@ function Faqs() {
                                 </div>
                             </div>
                         </div>
-
-                        <div className="accordion-item">
+                        <div className="accordion-item border-0">
                             <h2 className="accordion-header">
-                                <button className="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    Accordion Item #2
+                                <button className="accordion-button" type="button" data-bs-toggle="collapse show" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    {Questions[1].title}
                                 </button>
                             </h2>
-                            <div id="collapseTwo" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div id="collapseOne" className="accordion-collapse  show" data-bs-parent="#accordionExample">
                                 <div className="accordion-body">
-                                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    {Questions[1].text}
                                 </div>
                             </div>
                         </div>
+                        <div className="accordion-item border-0">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button" type="button" data-bs-toggle="collapse show" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    {Questions[2].title}
+                                </button>
+                            </h2>
+                            <div id="collapseOne" className="accordion-collapse  show" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    {Questions[2].text}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item border-0">
+                            <h2 className="accordion-header">
+                                <button className="accordion-button" type="button" data-bs-toggle="collapse show" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    {Questions[3].title}
+                                </button>
+                            </h2>
+                            <div id="collapseOne" className="accordion-collapse  show" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    {Questions[3].text}
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
 
