@@ -4,20 +4,22 @@ import ReviewCard from "./ReviewCard.components"
 
 function Reviews() {
     return (
-        <div id="recensioni" className="container">
-            <div className="row text-center">
-                <h2 className='col col-12'>Cosa ne pensano i nostri sviluppatori</h2>
-                <div class="row">
-                    <div className="col col-12">
-                        <div className="container">
-                            <div className="row">
+        <div id="recensioni" className="container my-5 py-5">
+            <div className="row text-center my-5">
+                <h2 className='col col-12 display-2 fw-semibold'>Cosa ne pensano i nostri sviluppatori</h2>
+                <div className="col">
+                    <div class="row">
+                        <div className="col-12">
+                            <div className="container">
+                                <div className="row">
 
-                                {Recensioni.map((review) => (
+                                    {Recensioni.map((review) => (
 
-                                    <ReviewCard review={review} />
+                                        <ReviewCard review={review} />
 
-                                ))}
+                                    ))}
 
+                                </div>
                             </div>
                         </div>
                     </div>
