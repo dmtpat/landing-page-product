@@ -9,7 +9,7 @@ import single_image from "../../assets/single-image2.png"
 
 function Faqs() {
     return (
-        <div className="container">
+        <div id='faqs' className="container">
             <div className="row gy-4 text-center">
                 <div className="col-12"><h2>FAQs</h2></div>
 

@@ -9,7 +9,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 function Subscribe() {
     return (
-        <div className="container-fluid text-center bg-light mt-5 py-5">
+        <div id='newsletter' className="container-fluid text-center bg-light mt-5 py-5">
             <div className="row">
                 <div className="col-3 m-auto">
                     <h2 className='fs-1 fw-bolder'>Iscriviti per rimanere aggiornato</h2>

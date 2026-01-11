@@ -1,11 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.module.css'
 import logo from '../../assets/logo.png'
+import Nav from 'react-bootstrap/Nav'
 
 function Header() {
     return (
         <header >
-            <nav className="navbar navbar-expand-lg fixed-top  bg-white mb-5 ">
+            <Nav className="navbar navbar-expand-lg fixed-top  bg-white mb-5 " id="navbar-example2" >
                 <div className="container-fluid  ">
                     <a className="navbar-brand" href="#">
                         <img src={logo} alt="Rubber Duck" />
@@ -38,9 +39,12 @@ function Header() {
                         </div>
                     </div>
                 </div>
-            </nav>
-
-
+            </Nav>
+            <div className="container-fluid  ">
+                <a className="navbar-brand" href="#">
+                    <img src={logo} alt="Rubber Duck" />
+                </a>
+            </div>
         </header>
 
     );
