@@ -1,3 +1,4 @@
 .ms_banner_bg {
     background-image: url(./src/assets/banner-bg.png);
+    background-image: cover;
 }
