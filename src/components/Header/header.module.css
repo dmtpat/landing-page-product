@@ -7,7 +7,7 @@ header {
     color: #3d3a38;
 }
 
-.navLink.:global(active) {
+.navLink:global(.active) {
     color: #2E45CC !important;
     background-color: transparent !important;
 }
