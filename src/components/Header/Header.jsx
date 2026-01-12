@@ -1,14 +1,14 @@
+import './Header.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import './Header.module.css'
 import logo from '../../assets/logo.png'
 import Nav from 'react-bootstrap/Nav'
 
 function Header() {
     return (
         <header >
-            <Nav className="navbar navbar-expand-lg fixed-top  bg-white mb-5 " id="navbar-example2" >
+            <Nav className="navbar navbar-expand-lg fixed-top  bg-white mb-5 " id="nav_paperelle" >
                 <div className="container-fluid  ">
                     <a className="navbar-brand" href="#">
                         <img src={logo} alt="Rubber Duck" />
@@ -18,9 +18,9 @@ function Header() {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse " id="navbarSupportedContent">
-                            <ul className="nav nav-pills navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul className="nav nav-pills navbar-nav me-auto mb-2 mb-lg-0 ">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#home">Home</a>
+                                    <a className="nav-link " href="#home">Home</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#punti_di_forza">I punti di forza</a>

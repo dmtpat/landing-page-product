@@ -6,3 +6,13 @@ header {
     font-size: 16px;
     color: #3d3a38;
 }
+
+
+
+#nav_paperelle>.navbar-nav>.nav-link:active {
+    color: red !important;
+}
+
+#nav_paperelle>.nav-pills>.nav-link>.active {
+    background-color: transparent !important;
+}
