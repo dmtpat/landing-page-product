@@ -10,8 +10,8 @@ function Reviews() {
                 <div className="col">
                     <div class="row">
                         <div className="col-12">
-                            <div className="container">
-                                <div className="row">
+                            <div className="container overflow-auto">
+                                <div className="row flex-nowrap">
 
                                     {Recensioni.map((review) => (
 
