@@ -20,22 +20,22 @@ function Header() {
                         <div className="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul className="nav nav-pills navbar-nav me-auto mb-2 mb-lg-0 ">
                                 <li className="nav-item">
-                                    <a className="nav-link " href="#home">Home</a>
+                                    <a className="nav-link navLink " href="#home">Home</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#punti_di_forza">I punti di forza</a>
+                                    <a className="nav-link navLink" href="#punti_di_forza">I punti di forza</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#recensioni">Recensioni</a>
+                                    <a className="nav-link navLink" href="#recensioni">Recensioni</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#paperelle">Paperelle</a>
+                                    <a className="nav-link navLink" href="#paperelle">Paperelle</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#faqs">FAQs</a>
+                                    <a className="nav-link navLink" href="#faqs">FAQs</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#newsletter">Newsletter</a>
+                                    <a className="nav-link navLink" href="#newsletter">Newsletter</a>
                                 </li>
                             </ul>
                         </div>

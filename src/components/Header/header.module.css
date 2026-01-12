@@ -7,10 +7,7 @@ header {
     color: #3d3a38;
 }
 
-.navbar-nav .nav-link.active {
-    color: red !important;
-}
-
-.nav-pills .nav-link.active {
+.navLink.:global(active) {
+    color: #2E45CC !important;
     background-color: transparent !important;
 }
