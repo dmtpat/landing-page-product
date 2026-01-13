@@ -8,12 +8,14 @@ import ReviewsSection from "./Reviews.components";
 import ShopSection from './ShopSection.components';
 import Faqs from "./Faqs.components.jsx"
 
+
 function Main() {
     return (
         <main>
             <Jumbotron />
             <Points />
             <ReviewsSection />
+
             <ShopSection />
             <Faqs />
         </main>

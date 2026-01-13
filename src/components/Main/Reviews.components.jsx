@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Recensioni from "../data/reviews.js"
-import ReviewCard from "./ReviewCard.components"
+import Swiper from './Swiper.components.jsx'
 
 function Reviews() {
     return (
@@ -12,13 +11,7 @@ function Reviews() {
                         <div className="col-12">
                             <div className="container overflow-auto">
                                 <div className="row flex-nowrap">
-
-                                    {Recensioni.map((review) => (
-
-                                        <ReviewCard review={review} />
-
-                                    ))}
-
+                                    <Swiper />
                                 </div>
                             </div>
                         </div>
