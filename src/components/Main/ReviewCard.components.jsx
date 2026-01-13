@@ -9,7 +9,7 @@ function ReviewCard(props) {
     const review = props.review;
 
     return (
-        <div id={review.id} className=" col col-4 pt-4 pb-4  " >
+        <div id={review.id} className=" col pt-4 pb-4  " >
             <p className="">"{review.text}"</p>
             <ul className="list-unstyled d-flex justify-content-center text-warning mb-0 pb-0 mt-auto pt-auto">
                 <li><FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B", }} /></li>
