@@ -16,10 +16,10 @@ function Faqs() {
             <div className="row gy-4 text-center mt-5">
                 <div className="col-12"><h2 className='display-2 fw-semibold'>FAQs</h2></div>
 
-                <div className="col-6">
+                <div className="col-12 col-lg-6">
                     <img className='img-fluid' src={single_image} alt="" />
                 </div>
-                <div className="col-6 text-end">
+                <div className="col-12 col-lg-6 text-end">
 
 
                     <div class="accordion" id="accordionExample">
@@ -96,7 +96,7 @@ function Faqs() {
                 <div class=" col-1 d-flex" >
 
                 </div>
-                <div className="col-3">
+                <div className="col-12 col-lg-3">
                     <div className="card border-0 p-4 text-center">
                         <div className="card-body">
                             <FontAwesomeIcon icon={faMapPin} size="2xl" style={{ color: "#2E45CC", }} />
@@ -107,12 +107,12 @@ function Faqs() {
                 </div>
 
 
-                <div class=" col-1 d-flex" >
+                <div class="d-none d-lg-flex col-1 d-flex" >
                     <div class="vr my-4"></div>
                 </div>
 
 
-                <div className="col-3">
+                <div className="col-12 col-lg-3 ">
                     <div className="card border-0 p-4  text-center">
                         <div className="card-body">
                             <FontAwesomeIcon icon={faBagShopping} size="2xl" style={{ color: "#2E45CC", }} />
@@ -123,12 +123,12 @@ function Faqs() {
                 </div>
 
 
-                <div class="col-1 d-flex" >
+                <div class="d-none d-lg-flex col-lg-1 d-flex" >
                     <div class="vr my-4"></div>
                 </div>
 
 
-                <div className="col-3">
+                <div className="col-12 col-lg-3">
                     <div className="card border-0 p-4  text-center">
                         <div className="card-body">
                             <FontAwesomeIcon icon={faBandage} size="2xl" style={{ color: "#2E45CC", }} />

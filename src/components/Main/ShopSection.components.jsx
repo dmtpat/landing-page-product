@@ -11,7 +11,7 @@ function ShopSection() {
             <div className="container text-start">
                 <div className="row ">
                     {Ducks.map((duck) => (
-                        <div className="col-4">
+                        <div className="col-12 col-lg-4">
                             <ShopCard duck={duck} />
                         </div>
                     ))}

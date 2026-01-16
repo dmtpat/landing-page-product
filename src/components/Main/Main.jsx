@@ -15,7 +15,6 @@ function Main() {
             <Jumbotron />
             <Points />
             <ReviewsSection />
-
             <ShopSection />
             <Faqs />
         </main>

@@ -1,3 +1,4 @@
+import React, { useRef, useState } from 'react';
 import { Pagination, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Recensioni from "../data/reviews.js"
@@ -13,10 +14,15 @@ export default () => {
             <Swiper
                 modules={[Pagination, A11y]}
                 spaceBetween={50}
-                slidesPerView={3}
+                slidesPerView={1}
+                breakpoints={{
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                }}
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
             >
                 {Recensioni.map((review) => (
                     <SwiperSlide>
