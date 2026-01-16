@@ -14,9 +14,9 @@ function Subscribe() {
                 <div className="col-12 col-lg-3 m-auto">
                     <h2 className='fs-1 fw-bolder'>Iscriviti per rimanere aggiornato</h2>
                     <p>Iscriviti alla nostra news letter per rimanere aggiornato su sconti e novità</p>
-                    <form action="#" className="px-5 px-lg-0 mx-5 px-lg-0">
+                    <form name="contact" method="POST" data-netlify="true" className="px-5 px-lg-0 mx-5 px-lg-0">
                         <div className="input-group mb-0 px-5 px-lg-0 mx-5 px-lg-0">
-                            <input type="mail" className="form-control border-0 bg-light" placeholder="Lascia la tua mail qui..." aria-label="email" aria-describedby="basic-addon1" />
+                            <input type="mail" className="form-control border-0 bg-light" name="newsletter-mail" placeholder="Lascia la tua mail qui..." aria-label="email" aria-describedby="basic-addon1" />
                             <button class="btn pr-0 mr-0 pr-5 pr-lg-0 mr-5 pr-lg-0" type="submit" id="button-addon2">
                                 <FontAwesomeIcon icon={faPaperPlane} size="2xl" style={{ color: "#04DF6C", }} />
                             </button>
