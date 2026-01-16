@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapPin } from '@fortawesome/free-solid-svg-icons'
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons'
 import { faBandage } from '@fortawesome/free-solid-svg-icons'
+import "./faqs.module.css"
 
 import Questions from "../data/faqs.js"
 import single_image from "../../assets/single-image2.png"
@@ -26,7 +27,7 @@ function Faqs() {
                             Questions.map((question) => (
                                 <div className="accordion-item border-0" key={question.id}>
                                     <h2 className="accordion-header">
-                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={"#" + question.id} aria-expanded="true" aria-controls={question.id}>
+                                        <button className="accordion-button plusMinus collapsed" type="button" data-bs-toggle="collapse" data-bs-target={"#" + question.id} aria-expanded="true" aria-controls={question.id}>
                                             {question.title}
                                         </button>
                                     </h2>
